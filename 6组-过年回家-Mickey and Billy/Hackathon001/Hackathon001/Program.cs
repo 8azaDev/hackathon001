@@ -16,12 +16,12 @@ namespace Hackathon001
                 RoutePlanner planner = new RoutePlanner();
                 RoutePlanResult result = planner.Paln(graph.NodeList, "0", (graph.NodeList.Count - 1).ToString());
                 Console.WriteLine(result.Value);
-                Console.ReadLine();
             }
             catch (Exception e)
             {
                 Console.WriteLine("输入有错");
             }
+            Console.ReadLine();
         }
     }
 }
