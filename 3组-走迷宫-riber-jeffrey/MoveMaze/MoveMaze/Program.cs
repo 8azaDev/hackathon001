@@ -27,6 +27,8 @@ namespace MoveMaze
             Console.WriteLine(MoveTo(new Point(maxX-1, maxY-1), map));
         }
 
+        private static int _MaxStep = 1000000;
+
         static int MoveTo(Point point, char[,] map)
         {
             var maxX = map.GetLength(0);
@@ -34,7 +36,7 @@ namespace MoveMaze
             var m = point.X;
             var n = point.Y;
             if (m < 0 || m >= maxX || n < 0 || n >= maxY || map[m, n] == '#' || point.HasViewed())
-                return 1000000;
+                return _MaxStep;
 
             if (m == 0 && n == 0)
             {
@@ -42,16 +44,16 @@ namespace MoveMaze
                 return 0;
             }
             var point1 = new Point(m + 1, n, point);
-            int minStep1 = m + 1 >= maxX ? 100 : MoveTo(point1, map);
+            int minStep1 = m + 1 >= maxX ? _MaxStep : MoveTo(point1, map);
 
             var point2 = new Point(m, n + 1, point);
-            int minStep2 = n + 1 >= maxY ? 100 : MoveTo(point2, map);
+            int minStep2 = n + 1 >= maxY ? _MaxStep : MoveTo(point2, map);
 
             var point3 = new Point(m, n - 1, point);
-            int minStep3 = n - 1 < 0 ? 100 : MoveTo(point3, map);
+            int minStep3 = n - 1 < 0 ? _MaxStep : MoveTo(point3, map);
 
             var point4 = new Point(m - 1, n, point);
-            int minStep4 = m - 1 < 0 ? 100 : MoveTo(point4, map);
+            int minStep4 = m - 1 < 0 ? _MaxStep : MoveTo(point4, map);
             int minStep = minStep1;
             if (minStep > minStep2)
             {
