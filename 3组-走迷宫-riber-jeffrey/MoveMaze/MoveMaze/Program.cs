@@ -34,7 +34,7 @@ namespace MoveMaze
             var m = point.X;
             var n = point.Y;
             if (m < 0 || m >= maxX || n < 0 || n >= maxY || map[m, n] == '#' || point.HasViewed())
-                return 100;
+                return 1000000;
 
             if (m == 0 && n == 0)
             {
