@@ -40,7 +40,7 @@ namespace MoveMaze
 
             if (m == 0 && n == 0)
             {
-                Console.WriteLine($"路径为：{string.Join(",", point.ViewedKeys)},(0,0)");
+                Console.WriteLine($"路径为：(0,0),{string.Join(",", point.ViewedKeys)}");
                 return 0;
             }
             var point1 = new Point(m + 1, n, point);
@@ -83,8 +83,8 @@ namespace MoveMaze
         {
             X = x;
             Y = y;
-            ViewedKeys.AddRange(prePoint.ViewedKeys);
             ViewedKeys.Add(prePoint.GetKey());
+            ViewedKeys.AddRange(prePoint.ViewedKeys);
         }
 
         public int X { get; set; }
