@@ -1,0 +1,9 @@
+c:\users\michael\documents\visual studio 2015\Projects\Monkey\Monkey\bin\Debug\Monkey.exe.config
+c:\users\michael\documents\visual studio 2015\Projects\Monkey\Monkey\bin\Debug\Monkey.exe
+c:\users\michael\documents\visual studio 2015\Projects\Monkey\Monkey\bin\Debug\Monkey.pdb
+c:\users\michael\documents\visual studio 2015\Projects\Monkey\Monkey\obj\Debug\Monkey.csprojResolveAssemblyReference.cache
+c:\users\michael\documents\visual studio 2015\Projects\Monkey\Monkey\obj\Debug\Monkey.exe
+c:\users\michael\documents\visual studio 2015\Projects\Monkey\Monkey\obj\Debug\Monkey.pdb
+E:\hackathon001\3组-猴子分桃-Kelly and Michael\Monkey\Monkey\bin\Debug\Monkey.exe.config
+E:\hackathon001\3组-猴子分桃-Kelly and Michael\Monkey\Monkey\obj\Debug\Monkey.exe
+E:\hackathon001\3组-猴子分桃-Kelly and Michael\Monkey\Monkey\obj\Debug\Monkey.pdb
